@@ -1,0 +1,26 @@
+@use "./../partials/mixins";
+@use "./../partials/devices";
+
+.section {
+    @include mixins.flex;
+    height: 100vh;
+}
+
+.hero {
+    @include mixins.flex;
+
+    @include devices.phone {
+        @include mixins.flex($fd: column);
+    }
+
+    &__image {
+        border-radius: 50%;
+        margin-right: 25px;
+    }
+
+    &__div {
+      @include devices.phone {
+        @include mixins.flex($fd: column)
+      } 
+    }
+}
