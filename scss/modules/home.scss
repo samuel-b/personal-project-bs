@@ -1,26 +1,36 @@
 @use "./../partials/mixins";
 @use "./../partials/devices";
+@use "./../partials/palette";
 
 .section {
     @include mixins.flex;
     height: 100vh;
+    margin: 0 5%;
 }
 
 .hero {
+    border: 1px solid palette.$colour3;
+    padding: 10%;
     @include mixins.flex;
 
     @include devices.phone {
         @include mixins.flex($fd: column);
+        text-align: center;
     }
 
     &__image {
         border-radius: 50%;
         margin-right: 25px;
+        width: 250px;
     }
 
     &__div {
-      @include devices.phone {
-        @include mixins.flex($fd: column)
-      } 
+        @include devices.phone {
+            @include mixins.flex($fd: column);
+        }
+    }
+
+    &__title {
+        color: palette.$colour3;
     }
 }
