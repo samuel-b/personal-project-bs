@@ -3,9 +3,11 @@
 @use "./../partials/palette";
 
 .section {
-    @include mixins.flex;
     height: 100vh;
     margin: 0 5%;
+    &__home {
+        @include mixins.flex;
+    }
 }
 
 .hero {

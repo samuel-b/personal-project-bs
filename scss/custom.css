@@ -1,11 +1,13 @@
 @charset "UTF-8";
 .section {
+  height: 100vh;
+  margin: 0 5%;
+}
+.section__home {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0 5%;
 }
 
 .hero {
@@ -40,6 +42,71 @@
 }
 .hero__title {
   color: #c110ff;
+}
+
+.section__about {
+  display: grid;
+  grid-template-columns: 1fr 0.25fr 1fr;
+  grid-template-areas: "me . skills";
+}
+@media only screen and (max-width: 480px) {
+  .section__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.about__me {
+  grid-area: me;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .about__me {
+    margin-bottom: 0;
+  }
+}
+.about__tech {
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .about__tech {
+    margin-top: 0;
+  }
+}
+
+.tech__title {
+  margin-bottom: 20px;
+}
+.tech__front {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .tech__front > img {
+    width: 24px;
+  }
+}
+.tech__back {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .tech__back > img {
+    width: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .tech__tools > img {
+    width: 24px;
+  }
 }
 
 .nav-link {
