@@ -1,0 +1,68 @@
+@use "./../partials/mixins";
+@use "./../partials/devices";
+@use "./../partials/palette";
+
+.section {
+  &__about{
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 1fr;
+    grid-template-areas:
+    "me . skills"
+    ;
+    @include devices.phone {
+      @include mixins.flex($fd: column, $jc: space-around)
+    }
+  }
+}
+
+.about {
+  &__me {
+    grid-area: me;
+    text-align: center;
+    @include mixins.flex ($fd: column);
+    @include devices.phone {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__tech {
+    grid-area: skills;
+    @include mixins.flex ($fd: column);
+    @include devices.phone {
+      margin-top: 0;
+    }
+  }
+}
+
+.tech {
+  &__title {
+    margin-bottom: 20px;;
+  }
+  &__front {
+    margin-bottom: 20px;
+   
+    & > img {
+      @include devices.phone {
+        width: 24px;
+      }
+    }
+  }
+  &__back {
+    margin-bottom: 20px;
+    & > img {
+      @include devices.phone {
+        width: 24px;
+      }
+    }
+
+  }
+  &__tools {
+    & > img {
+      @include devices.phone {
+        width: 24px;
+      }
+    }
+
+  }
+}
