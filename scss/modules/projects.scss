@@ -1,0 +1,30 @@
+@use "./../partials/mixins";
+@use "./../partials/devices";
+@use "./../partials/palette";
+
+.section {
+    &__projects {
+        @include mixins.flex($jc: space-around);
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    @include mixins.flex($fd: column);
+    width: 250px;
+
+    @include devices.phone {
+      margin-bottom: 20px;
+    }
+
+
+    &-buttons > a > button {
+        margin: 5px 20px;
+    }
+    &-tech {
+      &__icon {
+        margin-top: 10px;
+        width: 35px;
+      }
+    }
+}
