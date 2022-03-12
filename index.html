@@ -240,7 +240,35 @@
 
     </section>
     
-    <section id="contact" class="section"></section>
+    <section id="contact" class="section section__contact">
+      <div class="contact-connect">
+        <h2>Connect With Me</h2>
+        <div class="contact-connect__icons">
+          <a href="">
+            <i class="fa-2x fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/samuel-w-brooker/">
+            <i class="fa-2x fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/samuel-b">
+            <i class="fa-2x fa-brands fa-github"></i>  
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" action="">
+        <h2>Contact Me</h2>
+        <div class="form-floating mb-3 mt-3">
+          <input id="contactName" name="contactName" class="form-control contact-form__input" type="text" placeholder="Email" required>
+          <label for="contactName">Full Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input name="contactEmail" class=" form-control contact-form__input" type="email" placeholder="Email" required>
+          <label for="contactEmail">Email</label>
+        </div>
+          <textarea name="contactMessage" class="form-control contact-form__textarea" cols="30" rows="10" required></textarea>            
+        <button class="btn btn-outline-primary mt-3"type="submit">Submit</button>
+      </form>
+    </section>
 
 
 
