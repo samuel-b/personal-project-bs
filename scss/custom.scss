@@ -1,5 +1,6 @@
 @use "./modules/home.scss";
 @use "./modules/about.scss";
+@use "./modules/projects.scss";
 @use "./partials/devices";
 @use "./partials/mixins";
 @use "./partials/palette";
@@ -7,7 +8,6 @@
 $primary: palette.$colour3;
 
 //Navbar
-
 .nav {
     &-link {
         font-weight: 600;
@@ -27,6 +27,9 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 $navbar-light-toggler-border-color: palette.$colour3 !default;
 $navbar-light-brand-color: $navbar-light-hover-color !default;
 $navbar-light-brand-hover-color: $navbar-light-active-color !default;
+
+//Projects
+$card-border-color: palette.$colour3;
 
 
 //Bootstrap Source Files
