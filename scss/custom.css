@@ -114,7 +114,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -135,6 +134,39 @@
 .card-tech__icon {
   margin-top: 10px;
   width: 35px;
+}
+
+.section__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .section__contact {
+    display: grid;
+    grid-template-areas: "connect" "contact";
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  grid-area: contact;
+  grid-template-columns: 1fr;
+}
+.contact-connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: connect;
+}
+.contact-connect__icons > a {
+  margin: 0 5px;
 }
 
 .nav-link {
