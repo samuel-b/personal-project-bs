@@ -3,33 +3,30 @@
 @use "./../partials/palette";
 
 .section {
-  &__contact {
-    @include mixins.flex($jc: space-around);
-    @include devices.phone {
-      display: grid;
-      grid-template-areas:
-      "connect"
-      "contact"
-      ;
+    &__contact {
+        @include mixins.flex($jc: space-around);
+        @include devices.phone {
+            display: grid;
+            grid-template-areas:
+                "connect"
+                "contact";
+        }
     }
-  }
 }
 
 .contact {
-  &-form {
-    @include mixins.flex($fd: column, $ai: stretch);
-    text-align: center;
-    grid-area: contact;
-    grid-template-columns: 1fr;
-  }
-  &-connect {
-    @include mixins.flex($fd: column);
-    grid-area: connect;
-
-    &__icons > a {
-      margin: 0 5px;
+    &-form {
+        @include mixins.flex($fd: column, $ai: stretch);
+        text-align: center;
+        grid-area: contact;
+        grid-template-columns: 1fr;
     }
+    &-connect {
+        @include mixins.flex($fd: column);
+        grid-area: connect;
 
-  }
-
+        &__icons > a {
+            margin: 0 5px;
+        }
+    }
 }
