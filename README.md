@@ -2,10 +2,10 @@
 https://samuel-b.github.io/personal-project-bs/
 
 # Screenshots
-![Desktop Home](images\desktop-home.png)
-![Desktop About](images\desktop-about.png)
-![Desktop Projects](images\desktop-projects.png)
-![Desktop Contact](images\desktop-contact.png)
+![Desktop Home](images/desktop-home.png)
+![Desktop About](images/desktop-about.png)
+![Desktop Projects](images/desktop-projects.png)
+![Desktop Contact](images/desktop-contact.png)
 
 # Description
 My responsive personal portfolio built using HTML, SCSS/CSS, Bootstrap and a little javascript that introuces me and my projects.
