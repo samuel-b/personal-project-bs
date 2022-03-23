@@ -4,29 +4,18 @@
 
 .section {
     &__contact {
-        @include mixins.flex($jc: space-around);
-        @include devices.phone {
-            display: grid;
-            grid-template-areas:
-                "connect"
-                "contact";
+        &__title {
+            margin-bottom: 5%;
         }
-    }
-}
 
-.contact {
-    &-form {
-        @include mixins.flex($fd: column, $ai: stretch);
-        text-align: center;
-        grid-area: contact;
-        grid-template-columns: 1fr;
-    }
-    &-connect {
+        &__div {
+            margin: 2% 0;
+            @include mixins.flex($fd: column);
+        }
+
         @include mixins.flex($fd: column);
-        grid-area: connect;
-
-        &__icons > a {
-            margin: 0 5px;
+        @include devices.phone {
+            @include mixins.flex($fd: column, $jc: space-evenly);
         }
     }
 }

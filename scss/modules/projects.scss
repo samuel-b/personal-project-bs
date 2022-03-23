@@ -4,16 +4,22 @@
 
 .section {
     &__projects {
-        @include mixins.flex($jc: space-around);
 
-        @include devices.tablet {
-            @include mixins.flex($jc: space-around);
-            flex-wrap: wrap;
+        @include mixins.flex($fd:column);
+
+        &__title {
+            text-align: center
         }
-        @include devices.phone {
+
+        &__container {
             @include mixins.flex($jc: space-around);
             flex-wrap: wrap;
-            height: inherit;
+            width: 100vw;
+            margin-top: 80px;
+        }
+
+        @include devices.phone {
+            height: auto;
         }
     }
 }
