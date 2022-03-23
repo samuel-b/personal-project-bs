@@ -15,18 +15,25 @@
 
 .about {
     &__me {
+        border: 1px solid palette.$colour3;
+        margin: 200px 0;
+        padding: 5%;
         grid-area: me;
         text-align: center;
         @include mixins.flex($fd: column);
         @include devices.phone {
-            margin-bottom: 0;
+            margin-bottom: 5%;
         }
     }
 
     &__tech {
+        border: 1px solid palette.$colour3;
+        margin: 200px 0;
+        padding: 5%;
         grid-area: skills;
         @include mixins.flex($fd: column);
         @include devices.phone {
+            width:100%;
             margin-top: 0;
         }
     }
@@ -41,7 +48,7 @@
 
         & > img {
             @include devices.phone {
-                width: 24px;
+                width: 32px;
             }
         }
     }
@@ -49,14 +56,14 @@
         margin-bottom: 20px;
         & > img {
             @include devices.phone {
-                width: 24px;
+                width: 32px;
             }
         }
     }
     &__tools {
         & > img {
             @include devices.phone {
-                width: 24px;
+                width: 32px;
             }
         }
     }
