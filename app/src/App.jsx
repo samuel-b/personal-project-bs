@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Projects from "./container/Projects";
 import Home from "./container/Home";
+import About from "./container/About";
 
 function App() {
     const fetchProjects = async () => {
@@ -23,6 +24,7 @@ function App() {
                 <NavBar />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
                     <Route
                         path="/projects"
                         element={<Projects data={data} />}

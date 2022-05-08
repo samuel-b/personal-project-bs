@@ -25,11 +25,13 @@ const NavBar = () => {
                     <Link1 as={Link} to="/">
                         Home
                     </Link1>
-                    <Link1 href="#">About</Link1>
+                    <Link1 as={Link} to="/about">
+                        About
+                    </Link1>
                     <Link1 as={Link} to="/projects">
                         Projects
                     </Link1>
-                    <Link1 href="#">Contact</Link1>
+                    <Link1>Contact</Link1>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
