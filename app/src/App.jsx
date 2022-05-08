@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
+import GlobalPageStylingProvider from "./theme/global/GlobalPageStylingProvider";
 import { useQuery } from "react-query";
 import theme from "./theme";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,10 +19,15 @@ function App() {
     return (
         <BrowserRouter>
             <ThemeProvider theme={theme}>
+                <GlobalPageStylingProvider />
                 <NavBar />
-                <Home />
-
-                <Projects data={data} />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route
+                        path="/projects"
+                        element={<Projects data={data} />}
+                    />
+                </Routes>
             </ThemeProvider>
         </BrowserRouter>
     );

@@ -4,7 +4,6 @@ const HeroWrapper = styled.div`
     border: 1px solid ${(props) => props.theme.colors["secondary"]};
     padding: 10%;
     display: flex;
-    width: 40%;
 `;
 
 const HeroImage = styled.img`

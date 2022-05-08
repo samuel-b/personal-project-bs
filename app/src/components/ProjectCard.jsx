@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
                 src={`https://raw.githubusercontent.com/samuel-b/${project.name}/main/images/${project.name}.png`}
                 alt=""
             />
-            <Accordion defaultActiveKey="0" flush>
+            <Accordion flush>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Technology Used</Accordion.Header>
                     <Accordion.Body>...</Accordion.Body>

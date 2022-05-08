@@ -3,8 +3,10 @@ import ProjectCard from "../components/ProjectCard";
 
 const ProjectsWrapper = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
 `;
 
 const Projects = ({ data }) => {
@@ -15,7 +17,10 @@ const Projects = ({ data }) => {
     return (
         <ProjectsWrapper>
             {data.map((project) => {
-                if (project.id >= 473585771)
+                if (
+                    project.id >= 473585771 &&
+                    project.name != "personal-project-react-ts"
+                )
                     return <ProjectCard key={project.id} project={project} />;
             })}
         </ProjectsWrapper>
