@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import { device } from "../theme/_devices";
 
 const HeroWrapper = styled.div`
-    border: 1px solid ${(props) => props.theme.colors["secondary"]};
     padding: 10%;
     display: flex;
+    @media ${device.mobileS} {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 `;
 
 const HeroImage = styled.img`

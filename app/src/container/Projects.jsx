@@ -6,7 +6,7 @@ const ProjectsWrapper = styled.div`
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    height: 100vh;
+    height: 93vh;
 `;
 
 const Projects = ({ data }) => {

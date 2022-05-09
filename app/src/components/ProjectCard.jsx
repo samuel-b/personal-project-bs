@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Accordion from "react-bootstrap/Accordion";
+import { device } from "../theme/_devices";
 
 const CardWrapper = styled.div`
     display: flex;
@@ -8,6 +9,9 @@ const CardWrapper = styled.div`
     padding: 10px;
     width: 275px;
     border: 1px solid ${(props) => props.theme.colors["secondary"]};
+    @media ${device.mobileM} {
+        margin: 10px 0;
+    }
 `;
 
 const CardImage = styled.img`
