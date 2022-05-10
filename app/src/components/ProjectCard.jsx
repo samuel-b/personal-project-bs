@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
             <h4>{project.name}</h4>
             <CardImage
                 src={`https://raw.githubusercontent.com/samuel-b/${project.name}/main/images/${project.name}.png`}
-                alt=""
+                alt="Project Image"
             />
             <Accordion flush>
                 <Accordion.Item eventKey="0">

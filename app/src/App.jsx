@@ -18,7 +18,7 @@ function App() {
     const { data } = useQuery("users", fetchProjects);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/personal-project-bs">
             <ThemeProvider theme={theme}>
                 <GlobalPageStylingProvider />
                 <NavBar />
