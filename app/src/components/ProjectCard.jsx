@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Accordion from "react-bootstrap/Accordion";
-import { device } from "../theme/_devices";
+import { Button } from "./StyledButton";
 
 const CardWrapper = styled.div`
     display: flex;
@@ -9,9 +9,7 @@ const CardWrapper = styled.div`
     padding: 10px;
     width: 275px;
     border: 1px solid ${(props) => props.theme.colors["secondary"]};
-    @media ${device.mobileM} {
-        margin: 10px 0;
-    }
+    margin: 5px 0;
 `;
 
 const CardImage = styled.img`
@@ -24,15 +22,9 @@ const ButtonWrapper = styled.div`
     margin-top: 15px;
 `;
 
-const CardButton = styled.button`
-    background-color: white;
-    border-color: ${(props) => props.theme.colors["secondary"]};
-    color: ${(props) => props.theme.colors["secondary"]};
-    border: 1px solid;
-    border-radius: 0.25rem;
-    padding: 6px 12px;
-    margin: 0 25px;
-`;
+const CardButton = styled(Button)`
+    margin:0 25px;
+`
 
 const ProjectCard = ({ project }) => {
     return (
@@ -45,7 +37,7 @@ const ProjectCard = ({ project }) => {
             <Accordion flush>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Technology Used</Accordion.Header>
-                    <Accordion.Body>...</Accordion.Body>
+                    <Accordion.Body>This feature is not avaliable yet..see github for technology used</Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>Project Description</Accordion.Header>

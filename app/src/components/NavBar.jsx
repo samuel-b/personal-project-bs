@@ -28,6 +28,17 @@ const NavBar = () => {
             <Container fluid>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto">
+                        <Link1 as={Link} to="/">
+                            Home
+                        </Link1>
+                        <Link1 as={Link} to="/about">
+                            About
+                        </Link1>
+                        <Link1 as={Link} to="/projects">
+                            Projects
+                        </Link1>
+                    </Nav>
                     <Nav>
                         <Test>
                             <div>
@@ -47,17 +58,6 @@ const NavBar = () => {
                                 https://www.linkedin.com/in/samuel-w-brooker/
                             </div>
                         </Test>
-                    </Nav>
-                    <Nav className="ms-auto">
-                        <Link1 as={Link} to="/">
-                            Home
-                        </Link1>
-                        <Link1 as={Link} to="/about">
-                            About
-                        </Link1>
-                        <Link1 as={Link} to="/projects">
-                            Projects
-                        </Link1>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

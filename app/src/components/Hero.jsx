@@ -1,14 +1,11 @@
 import styled from "styled-components";
-import { device } from "../theme/_devices";
+import { Button } from "./StyledButton";
+import { Link } from "react-router-dom";
 
 const HeroWrapper = styled.div`
     padding: 10%;
     display: flex;
-    @media ${device.mobileS} {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
+    flex-direction: column;
 `;
 
 const HeroImage = styled.img`
@@ -29,27 +26,20 @@ const HeroDesc = styled.h5`
     color: ${(props) => props.theme.colors["primary"]};
 `;
 
-const Button = styled.button`
-    background-color: white;
-    border-color: ${(props) => props.theme.colors["secondary"]};
-    color: ${(props) => props.theme.colors["secondary"]};
-    border: 1px solid;
-    border-radius: 0.25rem;
-    padding: 6px 12px;
-`;
-
 const Hero = () => {
     return (
         <HeroWrapper>
             <HeroImage
-                src="https://i.picsum.photos/id/1077/200/200.jpg?hmac=hiq7UCoz9ZFgr9HcMCpbnKhV-IMyOJqsQtVFyqmqohQ"
+                src="https://media-exp1.licdn.com/dms/image/C5603AQF81eLAFZZ2Tg/profile-displayphoto-shrink_800_800/0/1593402131380?e=1657756800&v=beta&t=8zvqdK5O2zIlXQdVJo5N9Mf1m_7MTZKM_Z1pF06JnrU"
                 alt="Profile Photo"
             />
             <div>
                 <HeroName> Samuel Brooker</HeroName>
                 <HeroTitle>Junior Full Stack Developer</HeroTitle>
                 <HeroDesc>Lets build something great together</HeroDesc>
-                <Button>Learn More</Button>
+                <Link to="/about">
+                    <Button>Learn More</Button>
+                </Link>
             </div>
         </HeroWrapper>
     );
