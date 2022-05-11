@@ -17,7 +17,7 @@ const Link1 = styled.a`
     }
 `;
 
-const Test = styled.div`
+const IconWrapper = styled.div`
     display: flex;
     flex-direction: column;
 `;
@@ -32,32 +32,28 @@ const NavBar = () => {
                         <Link1 as={Link} to="/">
                             Home
                         </Link1>
-                        <Link1 as={Link} to="/about">
-                            About
-                        </Link1>
                         <Link1 as={Link} to="/projects">
                             Projects
                         </Link1>
                     </Nav>
                     <Nav>
-                        <Test>
-                            <div>
-                                <img src="https://img.icons8.com/ios-glyphs/24/0c63e4/new-post.png" />
-                                samuel@samuelb.dev
-                            </div>
-
+                        <IconWrapper>
                             <div>
                                 <img src="https://img.icons8.com/material-outlined/24/0c63e4/github.png" />
-                                https://github.com/samuel-b
+                                samuel-b
                             </div>
                             <div>
                                 <img
                                     src="https://img.icons8.com/ios-filled/22/0c63e4/linkedin.png"
                                     alt=""
                                 />
-                                https://www.linkedin.com/in/samuel-w-brooker/
+                                samuel-w-brooker
                             </div>
-                        </Test>
+                            <div>
+                                <img src="https://img.icons8.com/ios-glyphs/24/0c63e4/new-post.png" />
+                                samuel@samuelb.dev
+                            </div>
+                        </IconWrapper>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -15,16 +15,16 @@ function App() {
         return res.json();
     };
 
+
     const { data } = useQuery("users", fetchProjects);
 
     return (
         <BrowserRouter>
             <ThemeProvider theme={theme}>
                 <GlobalPageStylingProvider />
-                <NavBar />
+                <NavBar />                
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
                     <Route
                         path="/projects"
                         element={<Projects data={data} />}

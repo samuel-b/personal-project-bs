@@ -6,6 +6,12 @@ const HeroWrapper = styled.div`
     padding: 10%;
     display: flex;
     flex-direction: column;
+    width: 45%;
+    @media (max-width: 900px) {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 `;
 
 const HeroImage = styled.img`
@@ -37,8 +43,8 @@ const Hero = () => {
                 <HeroName> Samuel Brooker</HeroName>
                 <HeroTitle>Junior Full Stack Developer</HeroTitle>
                 <HeroDesc>Lets build something great together</HeroDesc>
-                <Link to="/about">
-                    <Button>Learn More</Button>
+                <Link to="/projects">
+                    <Button>Projects</Button>
                 </Link>
             </div>
         </HeroWrapper>

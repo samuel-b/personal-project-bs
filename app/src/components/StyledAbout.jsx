@@ -5,5 +5,10 @@ export const AboutWrapper = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 550px;
+    @media (max-width: 900px) {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 `;
