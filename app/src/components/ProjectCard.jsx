@@ -47,7 +47,7 @@ const ProjectCard = ({ project }) => {
                             return (
                                 <TechIcon
                                     key={index}
-                                    src={require(`./../../../images/icons/${topic}.png`)}
+                                    src={require(`./../assets/icons/${topic}.png`)}
                                     alt="Tech Icon"
                                 />
                             );
@@ -62,12 +62,18 @@ const ProjectCard = ({ project }) => {
             <ButtonWrapper>
                 <a href={project.html_url}>
                     <CardButton>
-                        <img src="https://img.icons8.com/ios-glyphs/25/000000/github.png" />
+                        <img
+                            src="https://img.icons8.com/ios-glyphs/25/000000/github.png"
+                            alt="Github Button"
+                        />
                     </CardButton>
                 </a>
                 <a href={`https://samuel-b.github.io/${project.name}`}>
                     <CardButton>
-                        <img src="https://img.icons8.com/ios/25/000000/open-in-browser.png" />
+                        <img
+                            src="https://img.icons8.com/ios/25/000000/open-in-browser.png"
+                            alt="Live Project Button"
+                        />
                     </CardButton>
                 </a>
             </ButtonWrapper>

@@ -36,7 +36,7 @@ const Hero = () => {
     return (
         <HeroWrapper>
             <HeroImage
-                src="https://media-exp1.licdn.com/dms/image/C5603AQF81eLAFZZ2Tg/profile-displayphoto-shrink_800_800/0/1593402131380?e=1657756800&v=beta&t=8zvqdK5O2zIlXQdVJo5N9Mf1m_7MTZKM_Z1pF06JnrU"
+                src={require("./../assets/images/profile.jpeg")}
                 alt="Profile Photo"
             />
             <div>
