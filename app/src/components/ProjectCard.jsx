@@ -9,6 +9,7 @@ const CardWrapper = styled.div`
     padding: 10px;
     width: 275px;
     border: 1px solid ${(props) => props.theme.colors["secondary"]};
+    border-radius: 5px;
     margin: 5px 0;
 `;
 
@@ -23,8 +24,12 @@ const ButtonWrapper = styled.div`
 `;
 
 const CardButton = styled(Button)`
-    margin:0 25px;
-`
+    margin: 0 25px;
+`;
+
+const TechIcon = styled.img`
+    width: 32px;
+`;
 
 const ProjectCard = ({ project }) => {
     return (
@@ -37,7 +42,17 @@ const ProjectCard = ({ project }) => {
             <Accordion flush>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Technology Used</Accordion.Header>
-                    <Accordion.Body>This feature is not avaliable yet..see github for technology used</Accordion.Body>
+                    <Accordion.Body>
+                        {project.topics.map((topic, index) => {
+                            return (
+                                <TechIcon
+                                    key={index}
+                                    src={require(`./../../../images/icons/${topic}.png`)}
+                                    alt="Tech Icon"
+                                />
+                            );
+                        })}
+                    </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>Project Description</Accordion.Header>

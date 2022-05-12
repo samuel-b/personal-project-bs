@@ -51,7 +51,7 @@ const NavBar = () => {
                             </div>
                             <div>
                                 <img src="https://img.icons8.com/ios-glyphs/24/0c63e4/new-post.png" />
-                                samuel@samuelb.dev
+                                samuel@samuel-b.dev
                             </div>
                         </IconWrapper>
                     </Nav>
