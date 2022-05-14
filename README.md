@@ -54,7 +54,7 @@ In comparison to the original project:
 
 ### What I want to implement in the future
 
--  [ x ]  I want to implement more technologies e.g. A backend and/or building a frontend with React (from original version)
+-  [x]  I want to implement more technologies e.g. A backend and/or building a frontend with React (from original version)
 - [ ] Standardise components/theme/styled further with the Styled Components library
 - [ ] Clean and refactor code further
 
