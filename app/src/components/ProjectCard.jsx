@@ -68,14 +68,19 @@ const ProjectCard = ({ project }) => {
                         />
                     </CardButton>
                 </a>
-                <a href={`https://samuel-b.github.io/${project.name}`}>
-                    <CardButton>
-                        <img
-                            src="https://img.icons8.com/ios/25/000000/open-in-browser.png"
-                            alt="Live Project Button"
-                        />
-                    </CardButton>
-                </a>
+
+                <CardButton>
+                    {project.has_pages ? (
+                        <a href={`https://samuel-b.github.io/${project.name}`}>
+                            <img
+                                src="https://img.icons8.com/ios/25/000000/open-in-browser.png"
+                                alt="Live Project Button"
+                            />
+                        </a>
+                    ) : (
+                        <img src="https://img.icons8.com/fluency-systems-regular/28/000000/cancel.png" />
+                    )}
+                </CardButton>
             </ButtonWrapper>
         </CardWrapper>
     );
