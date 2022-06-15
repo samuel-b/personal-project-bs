@@ -1,5 +1,5 @@
-# personal-project-bs
-https://samuel-b.dev/
+# Update
+Un-published github projects for this project/repository as project had been re-created and is currently hosted on AWS https://samuel-b.dev/
 
 # Screenshots
 ![Desktop Home](app/src/assets/images/Home.png)
