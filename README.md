@@ -1,5 +1,5 @@
 # Update
-Un-published github projects for this project/repository as project had been re-created and is currently hosted on AWS https://samuel-b.dev/
+Deleted gh-pages branch for this project/repository, project had been re-created as another repository and the live version is available at: https://samuel-b.dev/
 
 # Screenshots
 ![Desktop Home](app/src/assets/images/Home.png)
